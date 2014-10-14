@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Tulsa.js</title>
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+        menu: '#menu',
+        anchors: ['main', 'about', 'contact', 'social'],
+				sectionsColor: ['#F0DB4F', '#4BBFC3', '#A2AB58', '#FFFFFF'],
+        autoScrolling: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
+	<li data-menuanchor="about"><a href="#about">About Tulsa.js</a></li>
+	<li data-menuanchor="contact"><a href="#contact">Join Us</a></li>
+  <li data-menuanchor="social"><a href="#social">The Loop</a></li>
+</ul>
+
+<div id="fullpage">
+
+	<div class="section " id="section0">
+		<h1>Tulsa.js</h1>
+		<p>Tulsa's Javascript User's Group</p>
+	</div>
+
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1>Javascript all the things!</h1>
+			<p>Whether you're into jQuery, Node.js, Espruino or anything in between, we're the community for you!</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Join Us</h1>
+			<p>
+			We're just getting start, so we're ironing out the details of where & when we'll meet.
+			Stay in <a href="#social">the loop</a>, so you'll know the when & where!
+			</p>
+			<!--
+			<p>We meet over lunch the 2nd Friday of each month at the ____.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206212.0891636351!2d-95.86839756289069!3d36.14065754085762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b692b8ddd12e8f%3A0xe76910c81bd96af7!2sTulsa%2C+OK!5e0!3m2!1sen!2sus!4v1413153611802" width="400" height="350" frameborder="0" style="border:0"></iframe>
+			-->
+		</div>
+	</div>
+
+  <div class="section" id="section3">
+    <div class="intro">
+      <h1>Stay in the loop</h1>
+      <p>Sign up for our newsletter and follow us on Twitter to stay in the loop!</p>
+      <p>
+        <br/>
+        <a href="https://twitter.com/tulsajs" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @tulsajs</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </p>
+      <p>
+        <br/>
+        <a style="font-size: 0.75em;" href="http://eepurl.com/5yGkX">Newsletter Signup</a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
