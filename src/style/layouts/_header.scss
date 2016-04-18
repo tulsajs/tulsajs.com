@@ -4,6 +4,21 @@
   position: relative;
 }
 
+.blackout {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 83px;
+  background-color: #323330;
+  opacity: .8;
+  position: absolute;
+  z-index: 200;
+}
+
+.display-blackout {
+  display: block;
+}
+
 .logo {
   width: 200px;
   float: left;

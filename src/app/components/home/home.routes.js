@@ -20,19 +20,23 @@ export default function routes ($stateProvider) {
           controller: function () {
             var vm = this;
             var nav = angular.element(document.querySelector('.nav-mobile-pull'));
+            var blackout = angular.element(document.querySelector('.blackout'));
             vm.openMenu = function () {
               if (nav.hasClass('fadeInLeft')) {
                 nav.removeClass('fadeInLeft');
                 nav.addClass('fadeOutLeft');
+                blackout.removeClass('display-blackout');
               } else {
                 nav.removeClass('fadeOutLeft');
                 nav.addClass('open fadeInLeft');
+                blackout.addClass('display-blackout');
               }
             };
 
             vm.fadeMenuOut = function () {
               nav.removeClass('fadeInLeft');
               nav.addClass('fadeOutLeft');
+              blackout.removeClass('display-blackout');
             };
           }
         },
