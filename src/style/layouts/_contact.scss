@@ -24,6 +24,12 @@
       width: 100%;
       border-radius: 0;
       -webkit-appearance: none;
+      @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+          width: 98%;
+      }
     }
   }
 

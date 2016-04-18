@@ -139,9 +139,18 @@
     padding: 0px 0 40px;
     input[type=email] {
       padding-left: 5px;
+      height: 42px!important;
       width: 400px;
+      /* Portrait */
+      @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+          top: -1px;
+          height: 32px!important;
+      }
       @media (max-width: 600px) {
-        width: 200px;
+        width: 200px; 
       }
       @media (max-width: 400px) {
         margin-bottom: 20px;
