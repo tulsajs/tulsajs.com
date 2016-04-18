@@ -23,16 +23,16 @@ export default function routes ($stateProvider) {
             vm.openMenu = function () {
               if (nav.hasClass('fadeInRight')) {
                 nav.removeClass('fadeInRight');
-                nav.addClass('fadeOutRight');
+                nav.addClass('fadeOutLeft closed');
               } else {
-                nav.removeClass('fadeOutRight');
+                nav.removeClass('fadeOutLeft closed');
                 nav.addClass('open fadeInRight');
               }
             };
 
             vm.fadeMenuOut = function () {
               nav.removeClass('fadeInRight');
-              nav.addClass('fadeOutRight');
+              nav.addClass('fadeOutLeft closed');
             };
           }
         },
