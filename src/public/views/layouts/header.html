@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="header">
+    <img class="logo" ng-src="img/tjs.svg"></img>
+    <nav>
+      <ul>
+        <li><a class="button" ui-sref="base">Home</a></li>
+        <li><a class="button" ui-sref="base.about">About</a></li>
+        <li><a class="button" ui-sref="base.meetups">Meetups</a></li>
+        <li><a class="button" ui-sref="base.projects">Projects</a></li>
+        <li><a class="button" ui-sref="base.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-mobile">
+      <img ng-click="$ctrl.openMenu()" ng-src="img/hamburger.png" alt="">
+    </div>
+    <div class="nav-mobile-pull animated">
+      <ul class="menu">
+        <a class="" ng-click="$ctrl.fadeMenuOut()" ui-sref="base"><li>Home</li></a>
+        <a class="" ng-click="$ctrl.fadeMenuOut()" ui-sref="base.about"><li>About</li></a>
+        <a class="" ng-click="$ctrl.fadeMenuOut()" ui-sref="base.meetups"><li>Meetups</li></a>
+        <a class="" ng-click="$ctrl.fadeMenuOut()" ui-sref="base.projects"><li>Projects</li></a>
+        <a class="" ng-click="$ctrl.fadeMenuOut()" ui-sref="base.contact"><li>Contact</li></a>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

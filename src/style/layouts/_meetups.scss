@@ -1,0 +1,64 @@
+.meetup-yellow {
+  color: #323330;
+  background-color: #F7DC4C;
+
+  .main-title {
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 0 10px;
+    margin: 0px;
+  }
+
+  .meetups {
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    .meetup {
+      width: 450px;
+      color: #F7DC4C;
+      text-align: center;
+      background-color: #323330;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      .date {
+        font-size: 25px;
+        display: block;
+        padding-bottom: 5px;
+      }
+
+      .time {
+        font-size: 16px;
+        display: block;
+        padding-bottom: 5px;
+      }
+
+      .meetups-header {
+        font-size: 22px;
+        padding-bottom: 5px;
+        margin: 20px auto 10px;
+        max-width: 250px;
+        border-bottom: 2px solid #F7DC4C;
+      }
+      .meetups-name {
+        font-size: 16px;
+        padding-bottom: 5px;
+      }
+      .topics {
+        max-width: 250px;
+        margin: 20px auto 30px;
+        text-align: left;
+        .topic {
+          margin: 10px 0;
+          font-size: 18px;
+        }
+      }
+      .button-secondary {
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+    }
+  }
+}

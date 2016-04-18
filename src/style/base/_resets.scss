@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: #323330;
+  }
+  &:hover {
+    color: #3F403C;
+  }
+}
+
+.pad-bottom {
+  padding-bottom: 10px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #F7DC4C;
+  color: #323330;
+  font-family: Roboto, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.right {
+  float: right;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 2em!important;
+}
+
+input[type="text"], input[type="email"], select {
+  position: relative;
+  background-color: #F7DC4C;
+  border: none;
+  height: 35px!important;
+  color: #323330;
+  font-size: 22px;
+  height: 40px!important;
+}
+
+*::-webkit-input-placeholder {
+color: #434441;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #434441;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #434441;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #434441;
+}

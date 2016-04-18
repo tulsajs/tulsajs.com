@@ -1,0 +1,61 @@
+.form {
+  padding: 60px 15px 60px 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  .inputs {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    label {
+      font-size: 30px;
+      display: block;
+      text-align: left;
+      width: 330px;
+      margin: 10px 0;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    input {
+      padding-left: 5px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .textarea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    label {
+      font-size: 30px;
+      display: block;
+      text-align: left;
+      margin: 10px 0px;
+      width: 700px;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    textarea {
+      padding-left: 5px;
+      position: relative;
+      background-color: #F7DC4C;
+      border: none;
+      height: 400px!important;
+      color: #323330;
+      font-size: 22px;
+      width: 100%;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+  }
+  .contact-button {
+    left: 5px;
+    position: relative;
+  }
+}

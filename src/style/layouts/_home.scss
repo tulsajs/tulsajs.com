@@ -1,0 +1,197 @@
+.hero-banner {
+  background-color: #323330;
+  color: #F7DC4C;
+  text-align: center;
+  position: relative;
+
+  .hero-title {
+    font-size: 65px;
+    padding: 20px 0 10px;
+    margin: 0px;
+    @media (max-width: 800px) {
+      font-size: 45px;
+    }
+    @media (max-width: 550px) {
+      font-size: 29px;
+    }
+    @media (max-width: 350px) {
+      font-size: 24px;
+    }
+  }
+
+  .hero-image-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-image {
+    width: 400px;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .hero-image-large {
+    width: 600px;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .hero-image-smaller {
+    width: 314px;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .hero-button {
+    span {
+      top: -5px;
+      position: relative;
+    }
+    position: absolute;
+    bottom: 200px;
+    right: 10%;
+    padding: 8px 20px 2px;
+    img {
+      width: 80px;
+    }
+    @media (max-width: 800px) {
+      margin: 5px auto;
+      display: block;
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      width: 200px;
+    }
+  }
+}
+
+.next-meetup {
+  background-color: #F7DC4C;
+  .main-title {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin: 0px;
+  }
+}
+
+.meetup-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  .meetup-info {
+    text-align: left;
+    padding: 0 5px;
+    width: 400px;
+    .info {
+      width: 100%;
+      .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+        padding: 0;
+        border-bottom: 2px solid #323330;
+      }
+      .description {
+        p {
+          margin: 10px;
+          padding: 0;
+        }
+      }
+    }
+    padding-bottom: 20px;
+  }
+  #map {
+    width: 500px;
+    height: 300px;
+  }
+  .meetup-map {
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .iframe-maps {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
+
+.newsletter {
+  background-color: #323330;
+  color: #F7DC4C;
+  .main-title {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin: 0px;
+  }
+  .email {
+    text-align: center;
+    padding: 0px 0 40px;
+    input[type=email] {
+      padding-left: 5px;
+      width: 400px;
+      @media (max-width: 600px) {
+        width: 200px;
+      }
+      @media (max-width: 400px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.technologies {
+  color: #323330;
+  background-color: #F7DC4C;
+  .main-title {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin: 0px;
+  }
+  .logo-technologies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      padding: 20px;
+    }
+    img {
+      height: 150px;
+    }
+  }
+}
+
+.sponsors {
+  background-color: #323330;
+  color: #F7DC4C;
+  text-align: center;
+  .main-title {
+    font-size: 36px;
+    padding: 20px 0 20px;
+    margin: 0px;
+  }
+  .sponsors-cta {
+    font-size: 36px;
+    padding: 10px 0 20px;
+    margin: 0px;
+  }
+  .sponsors-logo {
+    padding: 20px;
+    img {
+      width: 250px;
+    }
+  }
+}
+

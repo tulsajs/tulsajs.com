@@ -1,0 +1,22 @@
+.projects-yellow {
+  color: #323330;
+  background-color: #F7DC4C;
+  text-align: center;
+  .main-title {
+    
+    font-size: 36px;
+    padding: 20px 0 10px;
+    margin: 0px;
+  }
+
+  .small-image {
+    max-width: 600px;
+  }
+  p {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px 20px;
+    font-size: 26px;
+  }
+}
