@@ -21,18 +21,18 @@ export default function routes ($stateProvider) {
             var vm = this;
             var nav = angular.element(document.querySelector('.nav-mobile-pull'));
             vm.openMenu = function () {
-              if (nav.hasClass('fadeInRight')) {
-                nav.removeClass('fadeInRight');
-                nav.addClass('fadeOutLeft closed');
+              if (nav.hasClass('fadeInLeft')) {
+                nav.removeClass('fadeInLeft');
+                nav.addClass('fadeOutLeft');
               } else {
-                nav.removeClass('fadeOutLeft closed');
-                nav.addClass('open fadeInRight');
+                nav.removeClass('fadeOutLeft');
+                nav.addClass('open fadeInLeft');
               }
             };
 
             vm.fadeMenuOut = function () {
-              nav.removeClass('fadeInRight');
-              nav.addClass('fadeOutLeft closed');
+              nav.removeClass('fadeInLeft');
+              nav.addClass('fadeOutLeft');
             };
           }
         },

@@ -1,6 +1,7 @@
 .header {
   background-color: #F7DC4C;
   padding: 10px;
+  position: relative;
 }
 
 .logo {
@@ -62,7 +63,4 @@ nav {
 .open {
   display: block;
   width: 100%;
-}
-.closed {
-  width: 400px;
 }
