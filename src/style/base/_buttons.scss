@@ -3,6 +3,8 @@
   padding: 8px 20px;
   color: #F7DC4C!important;
   background-color: #323330;
+  font-weight: 500!important;
+  letter-spacing: 0px;
   &:hover {
     background-color: #3F403C;
     cursor: pointer;
@@ -13,7 +15,9 @@
   font-size: 22px;
   padding: 8px 20px;
   background-color: #F7DC4C;
+  font-weight: 500!important;
   color: #323330!important;
+  letter-spacing: 0px;
   &:hover {
     background-color: #F7DF62;
     cursor: pointer;

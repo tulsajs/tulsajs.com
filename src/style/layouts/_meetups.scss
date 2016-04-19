@@ -1,6 +1,8 @@
 .meetup-yellow {
   color: #323330;
-  background-color: #F7DC4C;
+  background-color: #F5F4F0;
+  letter-spacing: 2px;
+  font-weight: 200;
 
   .main-title {
     text-align: center;
@@ -17,7 +19,7 @@
     padding: 10px 0;
     .meetup {
       width: 450px;
-      color: #F7DC4C;
+      color: #F5F4F0;
       text-align: center;
       background-color: #323330;
       padding: 20px;
@@ -40,7 +42,7 @@
         padding-bottom: 5px;
         margin: 20px auto 10px;
         max-width: 250px;
-        border-bottom: 2px solid #F7DC4C;
+        border-bottom: 2px solid #F5F4F0;
       }
       .meetups-name {
         font-size: 16px;

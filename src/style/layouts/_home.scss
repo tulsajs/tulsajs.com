@@ -67,8 +67,10 @@
 }
 
 .next-meetup {
-  background-color: #F7DC4C;
+  background-color: #F5F4F0;;
   .main-title {
+    font-weight: 200;
+    letter-spacing: 2px;
     font-size: 36px;
     text-align: center;
     padding: 20px 0 20px;
@@ -127,12 +129,14 @@
 
 .newsletter {
   background-color: #323330;
-  color: #F7DC4C;
+  color: #F5F4F0;
   .main-title {
     font-size: 36px;
     text-align: center;
     padding: 20px 0 20px;
     margin: 0px;
+    font-weight: 200;
+    letter-spacing: 2px;
   }
   .email {
     text-align: center;
@@ -161,12 +165,14 @@
 
 .technologies {
   color: #323330;
-  background-color: #F7DC4C;
+  background-color: #F5F4F0;;
   .main-title {
     font-size: 36px;
     text-align: center;
     padding: 20px 0 20px;
     margin: 0px;
+    font-weight: 200;
+    letter-spacing: 2px;
   }
   .logo-technologies {
     display: flex;
@@ -184,8 +190,10 @@
 
 .sponsors {
   background-color: #323330;
-  color: #F7DC4C;
+  color: #F5F4F0;
   text-align: center;
+  font-weight: 200;
+  letter-spacing: 2px;
   .main-title {
     font-size: 36px;
     padding: 20px 0 20px;
