@@ -1,4 +1,9 @@
 # [TulsaJS Official Site Repo](http://tulsajs.com)
+
+##### Technologies Used
+____
+This site uses AngularJS 1.5 with ES6 Classes. It uses Babel stage-0 for es6/es7 features and webpack to manage the module loading.
+
 ##### Getting Development Environment Started
 _____
 1. run `git clone https://github.com/tulsajs/tulsajs.com.git`
