@@ -1,0 +1,26 @@
+<div class="newsletter">
+  <div class="main-title">
+    Signup for the Newsletter
+  </div>
+  <div class="newsletter-form">
+    <div class="top-news">
+      <div class="first-name">
+        <input type="text" ng-model="$ctrl.first_name" placeholder="enter first name"></input>
+      </div>
+      <div class="last-name">
+        <input type="text" ng-model="$ctrl.last_name" placeholder="enter last name"></input>
+      </div>
+    </div>
+    <div class="bottom-news">
+      <div class="email">
+        <input type="email" ng-model="$ctrl.email" placeholder="enter email address"></input>
+      </div>
+      <div class="submit-newsletter">
+        <a class="button-secondary" ng-if="!$ctrl.loading" ng-click="$ctrl.signup()">Subscribe</a>
+        <a class="button-secondary" ng-if="$ctrl.loading"><img ng-src="./img/ajax-loader.gif" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <h4 ng-if="$ctrl.error" class="warning center bottom">{{$ctrl.error}}</h4>
+  <h4 ng-if="$ctrl.success" class="success center bottom">{{$ctrl.success}}</h4>
+</div>

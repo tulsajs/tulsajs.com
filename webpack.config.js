@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
+var webpackEnv = require('webpack-env');
 var ENV = process.env.npm_lifecycle_event;
 var isProd = ENV === 'build';
 
@@ -53,7 +54,7 @@ module.exports = (function makeWebpackConfig () {
     }]
   };
 
-  config.plugins = [];
+  config.plugins = [webpackEnv];
 
   config.plugins.push(
     new HtmlWebpackPlugin({

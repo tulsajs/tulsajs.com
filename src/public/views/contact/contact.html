@@ -1,21 +1,23 @@
 <div class="container">
   <div class="hero-banner">
     <h1 class="hero-title">/* Contact Us */</h1>
+    <h4 ng-if="$ctrl.error" class="warning">{{$ctrl.error}}</h4>
+    <h4 ng-if="$ctrl.success" class="success">{{$ctrl.success}}</h4>
     <div class="form">
       <div class="inputs">
         <label>Name
-        <input type="text" placeholder="enter name"></input>
+        <input type="text" ng-model="$ctrl.name" placeholder="enter name"></input>
         </label>
         <label>Email
-        <input type="email" placeholder="enter email address"></input>
+        <input type="email" ng-model="$ctrl.email" placeholder="enter email address"></input>
         </label>
       </div>
       <div class="textarea">
       <label>Message
-        <textarea rows="10" name=""  placeholder="what do you want to talk about?"></textarea>
+        <textarea rows="10" name=""  ng-model="$ctrl.message" placeholder="what do you want to talk about?"></textarea>
       </label>
       </div>
-      <a class="button-secondary right contact-button" href="" title="">Send</a>
+      <a class="button-secondary right contact-button" ng-click="$ctrl.sendContact()" href="" title="">Send</a>
       <div class="clear"></div>
     </div>
   </div>
