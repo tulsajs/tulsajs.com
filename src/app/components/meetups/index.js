@@ -7,9 +7,9 @@ import MeetupsService from './meetups.service.js';
 
 export default angular.module('app.meetups', [uirouter, ngResource])
   .config(routing)
-  .controller('MeetupsController', MeetupsController)
   .service('MeetupsService', MeetupsService)
-  .config(function($sceProvider) {
+  .controller('MeetupsController', MeetupsController)
+  .config(['$sceProvider', function ($sceProvider) {
     $sceProvider.enabled(false);
-  })
+  }])
   .name;
