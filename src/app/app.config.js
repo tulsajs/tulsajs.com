@@ -1,8 +1,10 @@
 export default function routing ($urlRouterProvider, $locationProvider) {
   'ngInject';
-  $locationProvider.html5Mode(HTML_MODE);
+  
   if (HTML_MODE) {
-    $locationProvider.hashPrefix('!');
+    $locationProvider.html5Mode(true).hashPrefix('!');
+  } else {
+    $locationProvider.html5Mode(false);
   }
   $urlRouterProvider.otherwise('/');
 };
