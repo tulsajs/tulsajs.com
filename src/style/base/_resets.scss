@@ -57,7 +57,9 @@ button {
 }
 
 .center {
-  text-align: center;
+  text-align: center!important;
+  align-self: center;
+  justify-content: center;
 }
 
 .margin-top {

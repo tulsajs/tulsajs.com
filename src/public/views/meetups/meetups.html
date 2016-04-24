@@ -10,40 +10,21 @@
     <div class="main-title">
       Current Meetups
     </div>
-    <div class="meetups">
-      <div class="meetup">
-        <span class="date">April 15, 2015</span>
-        <span class="time">6:00pm - 8:00pm</span>
+    <div class="meetups center" ng-if="!$ctrl.events">
+      <img ng-src="./img/ring-alt.gif" alt="">
+    </div>
+    <div class="meetups" ng-if="$ctrl.events">
+      <div class="meetup" ng-repeat="event in $ctrl.events">
+        <span class="date">{{event.when}}</span>
+        <span class="time">{{event.time}}</span>
         <div class="meetups-header">Location</div>
-        <div class="meetups-name">36 Degrees North</div>
-        <div class="meetups-name">
-          36 East Cameron Street Tulsa, OK 74103
-        </div>
+        <div class="meetups-name" ng-bind-html="event.whereName"></div>
+        <div class="meetups-name" ng-bind-html="event.wherePlace"></div>
         <div class="meetups-header">Topics</div>
-        <div class="topics">
-          <div class="topic">* Angular es6</div>
-          <div class="topic">* React with Redux</div>
-          <div class="topic">* Jquery Spaghetti</div>
-          <div class="topic">* CycleJS</div>
+        <div class="topics" >
+          <div class="topic" ng-repeat="topic in event.topics">* {{topic}}</div>
         </div>
-        <a class="button-secondary">Full Meetup Notes</a>
-      </div>
-      <div class="meetup">
-        <span class="date">April 15, 2015</span>
-        <span class="time">6:00pm - 8:00pm</span>
-        <div class="meetups-header">Location</div>
-        <div class="meetups-name">36 Degrees North</div>
-        <div class="meetups-name">
-          36 East Cameron Street Tulsa, OK 74103
-        </div>
-        <div class="meetups-header">Topics</div>
-        <div class="topics">
-          <div class="topic">* Angular es6</div>
-          <div class="topic">* React with Redux</div>
-          <div class="topic">* Jquery Spaghetti</div>
-          <div class="topic">* CycleJS</div>
-        </div>
-        <a class="button-secondary">Full Meetup Notes</a>
+        <a class="button-secondary" href="{{event.url}}" target="_blank">Full Meetup Notes</a>
       </div>
     </div>
   </div>

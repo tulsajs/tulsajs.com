@@ -1,5 +1,11 @@
 export default class MeetupsController {
-  constructor () {
+  constructor (MeetupsService) {
     'ngInject';
+
+    MeetupsService.events().$promise.then(results => {
+      this.events = results.filter(result => {
+        return !result.error;
+      });
+    });
   }
 }

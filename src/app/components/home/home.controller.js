@@ -1,9 +1,9 @@
 import GoogleMapsLoader from 'google-maps';
 
 export default class HomeController {
-  constructor () {
+  constructor (MeetupsService) {
     'ngInject';
-    GoogleMapsLoader.KEY = 'AIzaSyDmIIHOqkLhhGE1zFXuAeKImyh-HWBS8mU';
+    GoogleMapsLoader.KEY = GOOGLE_MAP_KEY;
     
     var styles = [
       {
@@ -43,6 +43,10 @@ export default class HomeController {
       });
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');
+    });
+
+    MeetupsService.nextEvent().$promise.then(results => {
+      this.event = results;
     });
   }
 }
