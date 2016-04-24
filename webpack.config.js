@@ -7,6 +7,7 @@ var path = require('path');
 var webpackEnv = require('webpack-env');
 var ENV = process.env.npm_lifecycle_event;
 var isProd = ENV === 'build';
+var SitemapPlugin = require('sitemap-webpack-plugin');
 
 module.exports = (function makeWebpackConfig () {
   var config = {};
@@ -54,7 +55,9 @@ module.exports = (function makeWebpackConfig () {
     }]
   };
 
-  config.plugins = [webpackEnv];
+  config.plugins = [
+    webpackEnv
+  ];
 
   config.plugins.push(
     new HtmlWebpackPlugin({
@@ -64,6 +67,17 @@ module.exports = (function makeWebpackConfig () {
   );
 
   if (isProd) {
+    var paths = [
+      '/about',
+      '/meetups',
+      '/projets',
+      '/contact'
+    ];
+
+    config.plugins.push(
+      new SitemapPlugin('http://tulsajs.com', paths)
+    );
+
     config.plugins.push(
       new webpack.NoErrorsPlugin(),
       new webpack.optimize.DedupePlugin(),
