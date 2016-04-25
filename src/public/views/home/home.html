@@ -19,7 +19,8 @@
         <div class="info">
           <div class="title">Location</div>
           <div class="description">
-            <p>{{$ctrl.event.whereName}}</p>
+            <p ng-bind-html="$ctrl.event.whereName"></p>
+            <p ng-bind-html="$ctrl.event.wherePlace"></p>
           </div>
         </div>
         <div class="info">
