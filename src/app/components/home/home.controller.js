@@ -35,11 +35,18 @@ export default class HomeController {
         {name: 'Styled Map'});
 
       var map = new google.maps.Map(document.querySelector('#map'), {
-        center: {lat: 36.1515676, lng: -95.9885456},
+        center: {lat: 36.159385, lng: -95.993746},
         zoom: 15,
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
+      });
+
+      var marker = new google.maps.Marker({
+        position: {lat: 36.159385, lng: -95.993746},
+        map: map,
+        icon: './img/marker.png',
+        title: '36 Degrees North'
       });
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');

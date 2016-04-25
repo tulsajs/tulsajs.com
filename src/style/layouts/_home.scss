@@ -221,11 +221,22 @@
     font-size: 36px;
     padding: 10px 0 20px;
     margin: 0px;
+    a {
+      color: #F5F4F0;
+      &:hover {
+        color: #F7DC4C;
+      }
+    }
   }
   .sponsors-logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
     img {
-      width: 250px;
+      margin: 0px 20px;
+      width: 200px;
     }
   }
 }
