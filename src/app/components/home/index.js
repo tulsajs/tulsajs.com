@@ -11,4 +11,7 @@ export default angular.module('app.home', [uirouter, ngResource])
   .controller('HomeController', HomeController)
   .component('newsletter', Newsletter)
   .service('NewsletterService', NewsletterService)
+  .config(['$sceProvider', function ($sceProvider) {
+    $sceProvider.enabled(false);
+  }])
   .name;

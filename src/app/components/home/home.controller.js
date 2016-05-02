@@ -4,7 +4,6 @@ export default class HomeController {
   constructor (MeetupsService) {
     'ngInject';
     GoogleMapsLoader.KEY = GOOGLE_MAP_KEY;
-    
     var styles = [
       {
         stylers: [

@@ -17,6 +17,21 @@ a {
   }
 }
 
+.left {
+  float:left;
+  display: block;
+}
+
+.meetup-link {
+  margin: 8px!important;
+  padding: 0!important;
+  a {
+    padding: 8px 20px;
+    background-color: #E0393E;
+    color: #ffffff;
+  }
+}
+
 .pad-bottom {
   padding-bottom: 10px;
 }
