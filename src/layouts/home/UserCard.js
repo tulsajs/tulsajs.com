@@ -1,9 +1,9 @@
 import React from "react"
-import { Div, P, A, Img, Span } from "../../components/Base"
+import { Div, P, A, Span } from "../../components/Base"
 import Header from "../../components/Header"
 
 export default function UserCard({
-  imgUrl,
+  img,
   headerText,
   paragraphText,
   linkText,
@@ -19,7 +19,7 @@ export default function UserCard({
       flexDirection="column"
     >
       <Div flexd ai="center">
-        <Img src={imgUrl} />
+        {img}
         <Header ml={4} type={5} color="teal9">
           {headerText}
         </Header>

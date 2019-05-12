@@ -1,12 +1,13 @@
 import React from "react"
-import { Div } from "../components/Base"
+import { Div, Img as BaseImage } from "../components/Base"
 import Hero from "../layouts/home/Hero"
 import SubHero from "../layouts/home/SubHero"
 import InfoCard from "../layouts/home/InfoCard"
 import UserCard from "../layouts/home/UserCard"
 import Layout from "../components/Layout"
+import Img from "gatsby-image"
 
-export default function Index() {
+export default function Index({ data }) {
   return (
     <Layout pageTitle="Home">
       <Div w="full" h="full">
@@ -55,14 +56,28 @@ export default function Index() {
         <Div bg="white" my={12}>
           <Div maxWidth="1200px" mx="auto" flexd flexWrap="wrap">
             <UserCard
-              imgUrl="/images/wassim.png"
+              img={
+                <BaseImage
+                  width="128px"
+                  height="128px"
+                  as={Img}
+                  fluid={data.wassim.childImageSharp.fluid}
+                />
+              }
               headerText="Wassim Metallaoui"
               paragraphText="Wassim is a co-founder of Shipzen with 10 years of experience developing technology solutions for fortune 500 companies and small businesses. He has been writing code to handle systems and business process automation for most of that time. Wassim started his career working in Information Technology where he managed multi-million dollar projects."
               linkText="@wassimk"
               linkUrl="https://twitter.com/wassimk"
             />
             <UserCard
-              imgUrl="/images/josh.png"
+              img={
+                <BaseImage
+                  width="128px"
+                  height="128px"
+                  as={Img}
+                  fluid={data.josh.childImageSharp.fluid}
+                />
+              }
               headerText="Josh Hamilton"
               paragraphText="Josh is a passionate developer. His knack for problem solving is only succeeded by his love for learning. He spends his off hours soaking up new open source projects. He currently lives in Tulsa with his wife, Jessica."
               linkText="@nearbycoder"
@@ -74,3 +89,26 @@ export default function Index() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    wassim: file(relativePath: { eq: "wassim.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    josh: file(relativePath: { eq: "josh.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
