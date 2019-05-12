@@ -36,35 +36,43 @@ function SEO({ description, lang, meta, keywords, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `description`,
+          name: "Content-Type",
+          content: "text/html; charset=UTF-8",
+        },
+        {
+          name: "description",
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
+          property: "og:title",
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
-          property: `og:description`,
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: "og:image",
+          content: "/images/code.png",
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: "og:type",
+          content: "website",
         },
         {
-          name: `twitter:creator`,
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:creator",
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          name: "twitter:title",
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
-          name: `twitter:description`,
+          name: "twitter:description",
           content: metaDescription,
         },
       ]
@@ -84,7 +92,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: [],
+  keywords: ["tulsa", "javascript", "react", "testing", "tulsajs", "js"],
   description: ``,
 }
 
