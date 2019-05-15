@@ -65,7 +65,7 @@ export default function Index({ data }) {
                 />
               }
               headerText="Wassim Metallaoui"
-              paragraphText="Wassim is a co-founder of Shipzen with 10 years of experience developing technology solutions for fortune 500 companies and small businesses. He has been writing code to handle systems and business process automation for most of that time. Wassim started his career working in Information Technology where he managed multi-million dollar projects."
+              paragraphText="Wassim is a full stack web developer happily slinging code for Planning Center. He enjoys working with technologies such as Ruby on Rails and React. He lives in Tulsa with his wife, two kids, and an incredibly annoying cat."
               linkText="@wassimk"
               linkUrl="https://twitter.com/wassimk"
             />
