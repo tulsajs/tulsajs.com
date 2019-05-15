@@ -27,6 +27,23 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
+      {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: "UA-140234131-1",
+          // Defines where to place the tracking script - `true` in the head and `false` in the body
+          head: false,
+          // Setting this parameter is optional
+          anonymize: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: [],
+          // Any additional create only fields (optional)
+          sampleRate: 5,
+          siteSpeedSampleRate: 10,
+          cookieDomain: "tulsajs.com",
+        },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
