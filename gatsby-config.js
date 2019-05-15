@@ -3,8 +3,10 @@ module.exports = {
     title: `TulsaJS`,
     description: `A community of Javascript developers in and around Tulsa, Oklahoma`,
     author: `@nearbycoder`,
+    siteUrl: `https://www.tulsajs.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
