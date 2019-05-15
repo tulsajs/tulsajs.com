@@ -34,15 +34,6 @@ module.exports = {
         trackingId: "UA-140234131-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: [],
-        // Any additional create only fields (optional)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
         cookieDomain: "www.tulsajs.com",
       },
     },
